@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.bar-menu {
+    width: 100%;
+	height: 10px;
+    background-color: #002846;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    background: #002846;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    transition: all 1s ease;
+}
+
+.logo{
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    list-style: menu;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px 10px;
+}
+
+.menu li a:hover {
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+    list-style-type: none;
+}
+
+.a-img {
+    padding-left: 78px;
+}
+
+.container {
+    background: #f8f4fc;
+    padding-top: 12em;
+}
+
+.head-txt {
+    font-family: 'Rubik', sans-serif;
+}
+
+.parrafo1 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .8;
+    column-count: 2;
+    margin: 30px;
+}
+
+.parrafo2 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .8;
+    column-count: 2;
+    margin: 30px;
+}
+
+.lista {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .9;
+    margin-bottom: 100px;
+}
+
+.security {
+    margin-bottom: 10px;
+    color: #fff;
+    margin-left: 30px;
+}
+.award {
+    color: #fff;
+    margin-left: 280px;
+}
+
+.valores {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 27px;
+}
+
+.container-valores {
+    background: rgb(37, 37, 37);
+}
+.container-valores p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.container-only-valores{
+    display: flex;
+}
+
+#txt-security {
+    letter-spacing: 1px;
+}
+
+#txt-award {
+    letter-spacing: 1px;
+}
+
+.contenedor-vision {
+    background: #f8f4f4;
+}
+
+
+.head-txt1 {
+    font-family: 'Rubik', sans-serif;
+}
+
+.mision {
+    background: rgb(15, 15, 15);
+}
+#txt-mision {
+    font-size: 20px;
+}
+
+.box {
+    height: 190px;
+    width: 180px;
+    background: #38ace4;
+}
+
+.box h1 {
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-box {
+    display: flex;
+    margin-left: 30px;
+}
+
+.box2 {
+    height: 190px;
+    width: 180px;
+    background: #38ace4;
+    margin-left: 40px;
+}
+.box2 h1 {
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box3 {
+    height: 190px;
+    width: 180px;
+    background: #38ace4;
+    margin-left: 40px;
+}
+.box3 h1 {
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box4 {
+    height: 190px;
+    width: 180px;
+    background: #38ace4;
+    margin-left: 40px;
+}
+.box4 h1 {
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box5 {
+    height: 190px;
+    width: 180px;
+    background: #38ace4;
+    margin-left: 40px;
+}
+.box5 h1 {
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box6 {
+    height: 190px;
+    width: 180px;
+    background: #38ace4;
+    margin-left: 40px;
+}
+.box6 h1 {
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+.boton-inicio {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

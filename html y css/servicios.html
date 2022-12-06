@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-s.css">
+    <link rel="shortcut icon" href="../img/demex-log.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <div class="bar-menu">
+        <header>
+            <nav class="nav">
+                <ul class="logo">
+                    <li class="a-img"><a href="index.html"><img src="../img/logo-empresa.png" width="170px"></a></li>
+                </ul>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+    </div>
+    <a name="inicio"></a>
+    <div class="container">
+        <div align="center" class="head-txt">
+            <a name="Historia"></a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Servicios</h2>
+        </div>
+        <br>
+        <br>
+        <h3 id="title" style="font-size: 30px;">¿Necesita ayuda para <strong>Importar o <br> exportar?</strong></h3>
+
+        <p id="sub-title"> En Demex podemos asesorarlo en:</p>
+        <br>
+        <img id="export" src="../img/export-import.png" width="500px">
+        <div class="condiciones-list">
+            <div class="box">
+                <button class="accordion"><span>01</span> Importación<img align="right"
+                        src="../img/chevron-down.svg"></button>
+                <div class="panel">
+                    <p>Encontramos todos los productos que necesitan de acuerdo a los estándares <br> de calidad exigido
+                        por el mercado, entregando el producto en las bodegas de <br> nuestros clientes con factura
+                        nacional, si así lo requiere.</p>
+                </div>
+
+                <button class="accordion"><span>02</span> Exportación<img align="right"
+                        src="../img/chevron-down.svg"></button>
+                <div class="panel">
+                    <p>Nosotros encontramos los mejores clientes para sus productos, <br> encargándonos de todo el
+                        proceso de
+                        exportación y liquidación de pasos.</p>
+                </div>
+
+                <button class="accordion"><span>03</span> Aduana<img align="right"
+                        src="../img/chevron-down.svg"></button>
+                <div class="panel">
+                    <p>Trabajamos en colaboración con agentes de aduanas, para hacer el proceso de <br> comercio
+                        exterior
+                        eficiente.</p>
+                </div>
+                <button class="accordion"><span>04</span> Representaciones<img align="right"
+                        src="../img/chevron-down.svg"></button>
+                <div class="panel">
+                    <p>Representamos empresas en Chile y en el extranjero, encontrando los mejores "partners" para
+                        incrementar las ventas de los productos. <br>
+                        <br>
+
+                        <b>Empresas representadas:</b> Yuria Pharm - Stratpharma - Catalysis - <br> Aristopharma - Tec
+                        India
+                        - Tüp
+                        Merserize
+                    </p>
+                </div>
+                <button class="accordion"><span>05</span> Estudio de mercado e investigación</button>
+                <button class="accordion"><span>06</span> Logística y carga internacional</button>
+                <button class="accordion"><span>07</span> Misiones comerciales</button>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion2");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-of.css">
+    <link rel="shortcut icon" href="../img/demex-log.png" type="image/x-icon">
+    <title>Ofertas</title>
+</head>
+
+<body>
+    <div class="bar-menu">
+        <nav class="nav">
+            <ul class="logo">
+                <li class="a-img"><a href="index.html"><img src="../img/logo-empresa.png" width="170px"></a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+    <a name="inicio"></a>
+    <div align="center" class="head-txt">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Ofertas</h2>
+    </div>
+    <br>
+    <br>
+    <p align="center" id="description-ofertas">Tenemos experiencia exportando e importando una gran variedad de
+        productos y representando empresas en
+        distintos rubros, destacando los siguientes productos:
+
+    </p>
+    <br>
+    <div class="contacto">
+        <img id="img-contac" src="../img/mensaje-icon.png" width="40px">
+        <p id="texto-no">Para contactactos de alguno de estos procutos por favor llamar al: <b>+1 (809)-316-2722</b></p>
+    </div>
+
+
+    <br>
+    <br>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Todo</button>
+        <button class="btn" onclick="filterSelection('Maquinaria Industrial')"> Maquinaria Industrial</button>
+        <button class="btn" onclick="filterSelection('Madera')"> Madera</button>
+        <button class="btn" onclick="filterSelection('Metales')"> Metales</button>
+        <button class="btn" onclick="filterSelection('Comida')"> Comida</button>
+        <button class="btn" onclick="filterSelection('Telecomunicaciones')"> Telecomunicaciones</button>
+    </div>
+
+    <div class="container">
+        <div class="filterDiv Maquinaria Industrial"><img id="zoom" src="../img/maquina1.png" width="300px"
+                height="300px">
+        </div>
+        <div class="filterDiv Madera"><img id="zoom" src="../img/madera1.png" width="300px" height="300px"></div>
+        <div class="filterDiv Madera"><img id="zoom" src="../img/madera2.png" width="300px" height="300px"></div>
+        <div class="filterDiv Maquinaria Industrial"><img id="zoom" src="../img/maquina2.png" width="300px"
+                height="300px">
+        </div>
+        <div class="filterDiv Metales"><img id="zoom" src="../img/metales1.png" width="300px" height="300px"></div>
+        <div class="filterDiv Metales"><img id="zoom" src="../img/metales2.png" width="300px" height="300px"></div>
+        <div class="filterDiv Maquinaria Industrial"><img id="zoom" src="../img/maquina3.png" width="300px"
+                height="300px">
+        </div>
+        <div class="filterDiv Metales"><img id="zoom" src="../img/metales3.png" width="300px" height="300px"></div>
+        <div class="filterDiv Telecomunicaciones"><img id="zoom" src="../img/tele1.png" width="300px" height="300px">
+        </div>
+        <div class="filterDiv Telecomunicaciones"><img id="zoom" src="../img/tele2.png" width="300px" height="300px">
+        </div>
+        <div class="filterDiv Telecomunicaciones"><img id="zoom" src="../img/tele3.png" width="300px" height="300px">
+        </div>
+        <div class="filterDiv Madera"><img id="zoom" src="../img/madera3.png" width="300px" height="300px"></div>
+        <div class="filterDiv Comida"><img id="zoom" src="../img/comida1png.png" width="300px" height="300px"></div>
+        <div class="filterDiv Comida"><img id="zoom" src="../img/comida2.png" width="300px" height="300px"></div>
+        <div class="filterDiv Comida"><img id="zoom" src="../img/comida3.png" width="300px" height="300px"></div>
+        <div class="filterDiv Comida"><img id="zoom" src="../img/comida4.png" width="300px" height="300px"></div>
+        <div class="filterDiv Comida"><img id="zoom" src="../img/comida5.png" width="300px" height="300px"></div>
+        <div class="filterDiv Maquinaria Industrial"><img id="zoom" src="../img/maquina4.png" width="300px"
+                height="300px">
+        </div>
+    </div>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>
